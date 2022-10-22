@@ -55,7 +55,7 @@ function inputChecker (e){
   isEmailChecker();
 }
 
-//Function that checks the validity of the email value
+//Function that checks for the validity of the email value
 
 function isEmailChecker(emailValue){
   
@@ -78,13 +78,11 @@ function isEmailChecker(emailValue){
     emailErrorIcon.style.display ='block';
   }
   else{
-    console.log(emailTest);
     if(emailFieldValue.length > 0 && emailTest){
+      
       emailErrorIcon.style.display ='none';
-        console.log(emailErrorIcon);
+      
     emailField.classList.remove('incorrect-email');
     }
-        
-
   }
 }
