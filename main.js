@@ -7,7 +7,7 @@ const emailErrorIcon = document.querySelector('.email-error-icon');
 
 form.addEventListener('submit', inputChecker);
 
-//function to check if the inputFields are empty
+//function to check if the inputFields has value
 
 function inputChecker (e){
   e.preventDefault();
@@ -26,7 +26,7 @@ function inputChecker (e){
       successMessage();
     }
     
-    // Function for the error message if the input field(s) is/are empty
+    // Function for the error message if the input field(s) has no value
     
     function sayErrorMessage(){
       
@@ -39,7 +39,7 @@ function inputChecker (e){
       input.parentElement.nextElementSibling.nextElementSibling.classList.add('error-msg');
     }
     
-        // Function for the success message if the input field(s) is/are empty
+        // Function for the success message if the input field(s) has value
 
     function successMessage (){
       
