@@ -86,7 +86,7 @@ input::placeholder{
 }
 
 input:focus{
-  
+ outline: none;
   border: 1px solid #6055a5;
 }
 
