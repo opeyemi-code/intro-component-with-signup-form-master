@@ -1,123 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
   margin: 0px;
   padding: 0px;
 }
 
-body{
-  background-image: url('images/bg-intro-mobile.png');
+body {
+  background-image: url("images/bg-intro-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: hsl(0, 100%, 74%);
   height: 100%;
-background-color: hsl(0, 100%, 74%);
-font-size: 16px;
-color: #FFFFFF;
-font-family: 'poppins' sans-serif;
+  background-color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "poppins" sans-serif;
 }
 
-#container{
+#container {
   padding: 50px 0;
 }
 
-.section{
+.section {
   max-width: 90%;
   margin: 0 auto;
 }
-.section:first-child{
+.section:first-child {
   padding: 30px 0;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-h1{
+h1 {
   text-align: center;
   font-size: 2.2em;
-
 }
 
-p{
+p {
   text-align: center;
   padding: 20px;
   line-height: 1.5;
 }
 
-.section p:first-child{
-  background-color: #5D53A3;
+.section p:first-child {
+  background-color: #5d53a3;
   width: 90%;
   margin: 0 auto;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 25px;
   box-sizing: border-box;
-  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
-form{
- margin: 0 auto;
- background-color: #FFFFFF;
- padding: 20px 20px 0;
- width: 90%;
- border-radius: 10px;
- box-sizing: border-box;
- box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.2);
-
+form {
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px 20px 0;
+  width: 90%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-button, input{
+button,
+input {
   display: block;
 }
 
-
-input{
+input {
   padding: 15px;
   margin-bottom: 5px;
-  border: 1px solid #DCDFE1;
+  border: 1px solid #dcdfe1;
   border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
-  caret-color:  #6055a5;
+  caret-color: #6055a5;
 }
 
-input::placeholder{
-    color: #757479;
-    font-weight: 700;
+input::placeholder {
+  color: #757479;
+  font-weight: 700;
 }
 
-input:focus{
- outline: none;
+input:focus {
+  outline: none;
   border: 1px solid #6055a5;
 }
 
-form div{
-       position: relative;
-       box-sizing: border-box;
-       margin-bottom: 20px;
+form div {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
-svg{
+.firstNameErrorIcon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: none;
+}
+
+/* svg{
   position: absolute;
   right: 20px;
   top: 10px;
 margin-top: 15px;
 display: none;
+} */
+
+.first-name-error-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: none;
 }
 
-.error-icon{
+.last-name-error-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  margin-top: 15px;
+  display: none;
+}
+
+.email-error-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  margin-top: 15px;
+  display: none;
+}
+
+.password-error-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  margin-top: 15px;
+  display: none;
+}
+
+.error-icon {
   display: block;
 }
 
-.error-msg{
+.error-msg {
   visibility: visible;
   padding-bottom: 10px;
 }
 
-svg:firstChild{
+svg:firstchild {
   margin-bottom: 20px;
 }
 
-small{
+small {
   float: right;
   margin-bottom: 5px;
   color: hsl(0, 100%, 74%);
@@ -125,30 +161,30 @@ small{
   visibility: hidden;
 }
 
-.incorrect-email{
+.incorrect-email {
   color: red;
 }
 
-button{
+button {
   width: 100%;
   box-sizing: border-box;
   text-align: center;
   padding: 20px;
   border-radius: 5px;
   background-color: hsl(154, 59%, 51%);
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   text-transform: uppercase;
   font-weight: 600;
-box-shadow: inset 0px -10px 5px -5px rgba(0,0,0,0.2);
+  box-shadow: inset 0px -10px 5px -5px rgba(0, 0, 0, 0.2);
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
-form p{
-  color: #DCDFE1;
+form p {
+  color: #dcdfe1;
   text-align: center;
   font-size: 13px;
   font-weight: 500;
@@ -158,40 +194,40 @@ form p strong {
   color: hsl(0, 100%, 74%);
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-@media (min-width: 768px){
-  body{
-    background-image: url('images/bg-intro-desktop.png');
+@media (min-width: 768px) {
+  body {
+    background-image: url("images/bg-intro-desktop.png");
     height: 100vh;
     font-size: 1.1em;
   }
-  
-  #container{
+
+  #container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100vw;
   }
-  
+
   .section {
     width: 40%;
   }
-  
-  .section:first-child h1{
+
+  .section:first-child h1 {
     text-align: left;
     font-size: 2.5em;
   }
-  
-  .section:first-child p{
+
+  .section:first-child p {
     text-align: left;
     padding-left: 0;
   }
 
-  footer{
+  footer {
     font-size: 1.1em;
   }
 }
