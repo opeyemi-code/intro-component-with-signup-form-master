@@ -99,8 +99,7 @@ form div{
 svg{
   position: absolute;
   right: 20px;
-  top: 10px;
-margin-top: 15px;
+  top: 15px;
 display: none;
 }
 
@@ -111,10 +110,6 @@ display: none;
 .error-msg{
   visibility: visible;
   padding-bottom: 10px;
-}
-
-svg:firstChild{
-  margin-bottom: 20px;
 }
 
 small{
